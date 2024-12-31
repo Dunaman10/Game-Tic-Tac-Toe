@@ -50,6 +50,7 @@ export default function Board() {
 
   return (
     <>
+      <h1>Tic Tac Toe</h1>
       <div className="status">{status}</div>
       <div className="board-row">
         <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
@@ -69,6 +70,7 @@ export default function Board() {
       <div>
         <Rematch onRematchClick={handleRematch} />
       </div>
+      <footer>Created by Syarif Hidayatullah</footer>
     </>
   );
 }
